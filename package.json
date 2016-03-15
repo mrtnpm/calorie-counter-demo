@@ -1,0 +1,45 @@
+{
+  "name": "project-martino-pham",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/istanbul test ./node_modules/mocha/bin/_mocha -- -R spec test/functional/api/*",
+    "preinstall": "cd client && npm install && npm run deploy",
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.toptal.com:daniel.campos/project-martino-pham.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.15.0",
+    "connect-mongo": "^1.1.0",
+    "cookie-parser": "^1.4.1",
+    "cookie-session": "^1.2.0",
+    "estraverse-fb": "^1.3.1",
+    "express": "^4.13.4",
+    "express-http-proxy": "^0.6.0",
+    "express-session": "^1.13.0",
+    "express-validation": "^0.5.0",
+    "joi": "^8.0.4",
+    "lodash": "^4.6.1",
+    "moment": "^2.11.2",
+    "mongoose": "^4.4.5",
+    "mongoose-paginate": "^5.0.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.3.0",
+    "eslint-config-defaults": "^9.0.0",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0",
+    "supertest-session": "^2.0.1",
+    "webpack": "^1.12.14"
+  },
+  "cacheDirectories": ["node_modules", "client/node_modules"]
+}

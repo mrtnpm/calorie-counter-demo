@@ -1,0 +1,10 @@
+const ROLES = {
+  ENTITY_ROLE_ADMIN: 'ENTITY_ROLE_ADMIN',
+  ENTITY_ROLE_MANAGER: 'ENTITY_ROLE_MANAGER',
+  ENTITY_ROLE_USER: 'ENTITY_ROLE_USER'
+};
+const ROLES_ENUM = Object.keys(ROLES).map((value) => ROLES[value]);
+
+ROLES.values = ROLES_ENUM;
+
+module.exports = ROLES;

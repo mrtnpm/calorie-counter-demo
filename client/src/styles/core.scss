@@ -1,0 +1,79 @@
+:global {
+  @import 'vendor/normalize';
+
+  // Some best-practice CSS that's useful for most apps
+  // Just remove them if they're not what you want
+  html {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .is-invalid .form-validation {
+    color: #d64242;
+  }
+  .is-valid .form-validation {
+    color: #34c240;
+  }
+  .FormField.is-invalid .FormLabel {
+    color: #d64242;
+  }
+  .FormField.is-invalid .FormInput {
+    border-color: #d64242;
+  }
+  .FormField.is-invalid .FormInput:focus {
+    border-color: #d64242;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(214, 66, 66, 0.1);
+  }
+  .FormField.is-valid .FormLabel {
+    color: #34c240;
+  }
+  .FormField.is-valid .FormInput {
+    border-color: #34c240;
+  }
+  .FormField.is-valid .FormInput:focus {
+    border-color: #34c240;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px rgba(52, 194, 64, 0.1);
+  }
+
+  nav a {
+    margin-right: 1em;
+  }
+  .users--toolbar {
+    margin-bottom: 1em;
+  }
+  .entries--filters, nav {
+    margin: 1em 0;
+  }
+
+  .entry, .user {
+    padding: 1em;
+    border: 1px solid black;
+    margin: 0 0 1em;
+  }
+  .entry ul {
+    margin: 0;
+    padding: 0;
+  }
+  .entry ul li {
+    display: inline-block;
+    margin: 0 1em 0 0;
+  }
+  .expected-daily-calories {
+    color: green;
+  }
+  .expected-daily-calories.invalid {
+    color: red;
+  }
+}

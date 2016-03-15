@@ -1,0 +1,10 @@
+.idea/encodings.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/misc.xml
+.idea/.name
+.idea/project-martino-pham.iml
+.idea/workspace.xml
+coverage
+node_modules
+dist
